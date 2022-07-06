@@ -5,8 +5,8 @@ function RecordCard({ record, notify }) {
         {
             method: 'DELETE'
         })
-        .then( () => notify({ action: 'DELETE', record: record }))
-        .catch( error => notify({ action: 'DELETE', error : error }))
+        .then( () => notify({ action: 'delete', record: record }))
+        .catch( error => notify({ action: 'delete', error : error }))
     }
 
     return (

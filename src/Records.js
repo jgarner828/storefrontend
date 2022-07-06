@@ -16,7 +16,7 @@ function Records() {
         .then(response => response.json())
         .then(result => setRecords(result))
         .catch(console.log);
-    }, [records]);
+    }, []);
 
 
     function addClick() {
